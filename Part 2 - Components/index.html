@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 4 Tutorial by bossROD</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      .custom-toggler-icon span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin: 8px 0;
+      }
+      .custom-toggler-icon::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: white;
+      }
+      .custom-toggler-icon::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 2px;
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container pb-5">
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">
+          This is a simple hero unit, a simple jumbotron-style component for
+          calling extra attention to featured content or information.
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Learn more</a
+          >
+        </p>
+      </div>
+      <!-- Alert -->
+      <div class="alert alert-primary" role="alert">
+        This is a primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        This is a secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        This is a success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        This is a danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        This is a warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        This is a info alert—check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        This is a light alert—check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        This is a dark alert—check it out!
+      </div>
+      <div id="myAlert" class="alert alert-success alert-dismissible fade show">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, vel
+        quos! Odit consequuntur quo ullam laudantium, aspernatur dicta
+        perferendis similique temporibus rerum aliquam in sed? Dolorum hic
+        deserunt at nulla!
+
+        <button class="close" data-dismiss="alert">&times;</button>
+      </div>
+      <!-- Badge -->
+      <p>Notification <i class="badge badge-danger">4</i></p>
+      <p>Notification <i class="badge badge-success badge-pill">4</i></p>
+      <!-- Breadcrumb -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item">Library</li>
+        <li class="breadcrumb-item active">Data</li>
+      </ol>
+      <!-- Buttons -->
+      <button class="btn btn-primary">Button 1</button>
+      <a href="#" class="btn btn-success">Button 2</a>
+      <input type="submit" href="#" class="btn btn-warning" value="Button 3" />
+      <!-- Button Group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button class="btn btn-primary">Button 1</button>
+        <a href="#" class="btn btn-success">Button 2</a>
+        <input
+          type="submit"
+          href="#"
+          class="btn btn-warning"
+          value="Button 3"
+        />
+      </div>
+      <!-- Card -->
+      <div class="card w-50">
+        <img
+          class="card-img-top img-fluid"
+          src="https://picsum.photos/seed/picsum/100/100"
+          alt="Picsum Random"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card w-50">
+        <img
+          class="card-img-top img-fluid"
+          src="https://picsum.photos/seed/picsum/100/100"
+          alt="Picsum Random"
+        />
+        <div class="card-body">
+          <h1 class="card-title">Card title</h1>
+          <p class="card-subtitle">Card Subtitle</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Left</button>
+            <button type="button" class="btn btn-secondary">Middle</button>
+            <button type="button" class="btn btn-secondary">Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="card w-50">
+        <div class="card-header">Card header</div>
+        <div class="card-body">
+          <h1 class="card-title">Card title</h1>
+          <p class="card-subtitle">Card Subtitle</p>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <button type="button" class="btn btn-primary">Pay Now!</button>
+        </div>
+        <div class="card-footer">Card footer</div>
+      </div>
+      <!-- Carousel -->
+      <div
+        id="carouselExampleControls"
+        class="carousel slide mt-5"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleControls"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="http://lorempixel.com/400/200/sports/1"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>IMAGE 1</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="http://lorempixel.com/400/200/sports/2"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>IMAGE 2</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="http://lorempixel.com/400/200/sports/3"
+              alt="Third slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>IMAGE 3</h1>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          data-slide="prev"
+        >
+          <i class="carousel-control-prev-icon"></i>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          data-slide="next"
+        >
+          <i class="carousel-control-next-icon"></i>
+        </a>
+      </div>
+
+      <!-- Collapse -->
+      <a href="#myContent" data-toggle="collapse">Show my content</a>
+      <button data-toggle="collapse" data-target="#myContent">
+        Show my content
+      </button>
+
+      <p class="collapse text-monospace mt-5" id="myContent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quo,
+        eos molestiae, dolorum consequatur provident perferendis in
+        consequuntur, eveniet dolorem architecto totam accusamus esse pariatur
+        libero praesentium enim odio ea!
+      </p>
+      <!-- Dropdown -->
+      <div class="btn-group">
+        <button class="btn btn-primary">Dropdown button</button>
+        <button
+          class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+          data-toggle="dropdown"
+        ></button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+      <!-- Forms -->
+      <div>
+        <div class="row">
+          <div class="form-group col-6">
+            <label>First Name</label>
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter your first name"
+            />
+            <small class="form-text">This is sample information!</small>
+          </div>
+          <div class="form-group col-6">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter your last name"
+            />
+          </div>
+          <div class="form-group col-6">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter your age"
+            />
+          </div>
+          <div class="form-group col-6">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Enter your gender"
+            />
+          </div>
+          <div class="form-group col">
+            <button class="form-control btn btn-success">Submit</button>
+          </div>
+        </div>
+      </div>
+      <!-- Input -->
+      <div class="input-group mt-5">
+        <div class="input-group-prepend">
+          <span class="input-group-text">https://www.</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter your domain"
+        />
+      </div>
+      <div class="input-group mt-5">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Enter your price"
+        />
+        <div class="input-group-prepend">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+      <!-- List Group -->
+      <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item active">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+      <!-- Modal -->
+      <!-- Trigger -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#myModal2"
+      >
+        Launch demo modal 2
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">My Beautiful Modal</h2>
+              <button class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="firstName">First Name</label>
+                  <input
+                    id="firstName"
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <label for="lastName">Last Name</label>
+
+                  <input
+                    id="lastName"
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter your last name"
+                  />
+                </div>
+                <div class="form-group col-6">
+                  <label for="age">Age</label>
+
+                  <input
+                    id="age"
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter your age"
+                  />
+                </div>
+                <div class="form-group col-6 d-flex flex-column">
+                  <label for="gender">Gender</label>
+                  <div class="btn-group">
+                    <button class="btn btn-light">Male</button>
+                    <button class="btn btn-light">Female</button>
+                  </div>
+                </div>
+                <div class="form-group col">
+                  <button class="form-control btn btn-success">Submit</button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-light" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="myModal2" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">test</div>
+        </div>
+      </div>
+      <!-- Nav -->
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+
+      <!-- Navbar -->
+      <div class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-brand">
+          <img src="http://lorempixel.com/40/40/sports/3" alt="" />
+        </div>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNavbarMenu"
+        >
+          <i class="custom-toggler-icon">
+            <span></span>
+          </i>
+        </button>
+        <div class="navbar-collapse collapse" id="myNavbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Pagination -->
+      <ul class="pagination pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#">&lt;</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">&gt; </a>
+        </li>
+      </ul>
+      <ul class="pagination pagination-sm">
+        <li class="page-item disabled">
+          <a class="page-link" href="#">&lt;</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">&gt; </a>
+        </li>
+      </ul>
+      <ul class="pagination pagination-lg">
+        <li class="page-item disabled">
+          <a class="page-link" href="#">&lt;</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">&gt; </a>
+        </li>
+      </ul>
+      <!-- Popover -->
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-container="body"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+      >
+        Popover on top
+      </button>
+      <!-- Progress -->
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" style="width: 56%"></div>
+      </div>
+      <!-- Scrollspy -->
+      <div class="d-flex">
+        <div id="list-example" class="list-group">
+          <a class="list-group-item list-group-item-action" href="#list-item-1"
+            >Item 1</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-2"
+            >Item2</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-3"
+            >Item 3</a
+          >
+          <a class="list-group-item list-group-item-action" href="#list-item-4"
+            >Item 4</a
+          >
+        </div>
+        <div
+          data-spy="scroll"
+          data-target="#list-example"
+          data-offset="0"
+          style="height: 120px; overflow-y: auto"
+          id="myScrollContent"
+        >
+          <h4 id="list-item-1">Item 1</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            veniam maiores eos temporibus tempora odit? Dolor dolores veniam nam
+            at rem minus laudantium deleniti ut totam, nisi corrupti. Quae, qui?
+          </p>
+          <h4 id="list-item-2">Item 2</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            veniam maiores eos temporibus tempora odit? Dolor dolores veniam nam
+            at rem minus laudantium deleniti ut totam, nisi corrupti. Quae, qui?
+          </p>
+          <h4 id="list-item-3">Item 3</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            veniam maiores eos temporibus tempora odit? Dolor dolores veniam nam
+            at rem minus laudantium deleniti ut totam, nisi corrupti. Quae, qui?
+          </p>
+          <h4 id="list-item-4">Item 4</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            veniam maiores eos temporibus tempora odit? Dolor dolores veniam nam
+            at rem minus laudantium deleniti ut totam, nisi corrupti. Quae, qui?
+          </p>
+        </div>
+      </div>
+      <!-- Tooltip -->
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Tooltip on top"
+      >
+        Tooltip on top
+      </button>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script> -->
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script type="text/javascript">
+    $("#carouselExampleControls").carousel({
+      interval: 1000,
+    });
+
+    setTimeout(() => {
+      $("#carouselExampleControls").carousel("pause");
+    }, 2000);
+
+    let number = 2;
+
+    $("#carouselExampleControls").on("slid.bs.carousel", () => {
+      number += 2;
+      console.log("new value: ", number);
+    });
+
+    $("#myAlert").on("closed.bs.alert", () => {
+      console.log("Show me!");
+    });
+
+    $("#exampleModal").on("hidden.bs.modal", () => {});
+
+    $("#myScrollContent").on("activate.bs.scrollspy", function (e) {
+      console.log("e: ", e);
+    });
+  </script>
+</html>
