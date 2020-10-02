@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 4 Tutorial by bossROD</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <style>
+      .__responsive-text {
+        font-size: clamp(16px, 5vw, 2.5rem);
+        /* font-size: 5vw; */
+      }
+    </style>
+  </head>
+  <body style="height: 100000px">
+    <div class="row mt-5">
+      <div class="col bg-primary">col</div>
+      <div class="col bg-secondary">col</div>
+      <div class="col bg-success">col</div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-4 bg-primary">col</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col bg-success">col</div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-4 bg-primary">col</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-5 bg-success">col</div>
+    </div>
+    <!-- Offset -->
+    <div class="row mt-5">
+      <div class="col-6 offset-5 bg-secondary">col-6</div>
+      <div class="col bg-success">col</div>
+    </div>
+    <!-- Alignments -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-2 bg-primary">col-2</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <div class="row justify-content-between mt-5">
+      <div class="col-2 bg-primary">col-2</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <div class="row justify-content-around mt-5">
+      <div class="col-2 bg-primary">col-2</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <div class="row justify-content-start mt-5">
+      <div class="col-2 bg-primary">col-2</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <div class="row justify-content-end mt-5">
+      <div class="col-2 bg-primary">col-2</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <div class="row bg-dark align-items-center mt-5" style="height: 300px">
+      <div class="col-2 bg-primary">col-2</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <!-- Responsive Grid System -->
+    <div class="row mt-5">
+      <div class="col col-md-6 col-lg-12 bg-primary">col col-md-6</div>
+      <div class="col-6 bg-secondary">col-6</div>
+      <div class="col-2 bg-success">col-2</div>
+    </div>
+    <div class="jumbotron mb-0">
+      <p class="display-1">Hello this is headline</p>
+      <button class="btn btn-primary">Learn more</button>
+    </div>
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 my-2">
+            <div class="card">
+              <img class="card-img-top" src="./img/pic1.jpg" alt="pic1" />
+              <div class="card-body">
+                <h1 class="card-title">Card Title</h1>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <small class="text-muted">Last updated 5 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <div class="card">
+              <img class="card-img-top" src="./img/pic1.jpg" alt="pic1" />
+              <div class="card-body">
+                <h1 class="card-title">Card Title</h1>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <small class="text-muted">Last updated 5 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 my-2">
+            <div class="card">
+              <img class="card-img-top" src="./img/pic1.jpg" alt="pic1" />
+              <div class="card-body">
+                <h1 class="card-title">Card Title</h1>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <small class="text-muted">Last updated 5 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Flex -->
+    <div
+      class="d-flex align-items-center justify-content-center justify-content-sm-start justify-content-md-end justify-content-lg-between bg-dark"
+      style="height: 300px"
+    >
+      <div class="bg-primary">bg-primary</div>
+      <div class="bg-secondary">bg-secondary</div>
+      <div class="bg-danger">bg-danger</div>
+    </div>
+    <div class="d-flex">
+      <div>test1</div>
+      <div class="mx-auto mr-sm-0 ml-lg-0">test2</div>
+    </div>
+    <p class="bg-primary text-center p-5 p-md-3 p-lg-2">Sample text</p>
+
+    <div class="bg-primary">text</div>
+    <h1 class="__responsive-text">Hi bossROD!</h1>
+    <div class="bg-primary">text</div>
+    <div class="d-md-none d-xl-block">HIDE ME WHEN SCREEN MD to LG</div>
+    <div class="fade show bg-primary">tests</div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+</html>
